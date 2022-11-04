@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(../pics/bg-body.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container{
+    max-width: 1000px;
+    margin: auto;
+}
+#header{
+    height: 200px;
+    background-image: url(../pics/bg-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#header h1{
+    color: white;
+    margin: 15px 0 0 30px;
+    font-size: 4em;
+}
+
+#content .stripe{
+    max-width: 79.99999%;
+    float: left;
+    background-color: white;
+    height: 938px;
+}
+
+
+#content .stripe p{
+    margin: 20px;
+}
+
+#content .stripe h1{
+    text-align: left;
+    color: white;
+    font-size: 3em;
+    background-color: green;
+    margin: 20px;   
+}
+
+#content .stripe:first-child{
+    width: 19.99999%;
+    background-color: rgb(51, 48, 48)
+        
+}
+
+#content .stripe ul{
+    list-style-type: none;
+    
+}
+
+#content .stripe ul li{
+    width: 70%;
+    padding: 10px;
+    text-align: start;
+    margin-left: 30px;
+    border-bottom: dotted white;
+          
+}
+
+#content .stripe ul li a{
+    text-decoration:white;
+    color: white;
+    
+    
+}
+
+.img_right{
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-left: 20px;
+}
+
+.img_left{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+
+#footer p{
+    float: left;
+    padding: 20px;
+}
+
+#footer ul{
+    list-style-type: none;
+    
+}
+
+#footer ul li{
+    text-decoration: none;
+    float: right;    
+    padding-top: 20px;
+    padding-right: 4px;
+}
+#footer ul li:first-child{
+    padding-right: 0;
+}
+
+#footer ul li a{
+    color: black;    
+    text-decoration: underline;
+}
+
+/*How To Clear Floats (Clearfix)*/
+#content::after, img::after, p::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
